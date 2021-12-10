@@ -26,7 +26,7 @@ const app = async () => {
     const answer = await question(`Отгадайте число. 1 или 2?: \n`);
     const isWin = Number(answer) === randomNumber;
     const data = { id: new Date().valueOf(), winner: isWin };
-    saveLog(data);
+    await saveLog(data);
     console.log(isWin ? 'Вы выиграли' : 'Вы проиграли');
     rl.close();
   } catch (err) {
