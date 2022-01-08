@@ -1,2 +1,5 @@
 node_modules
 .DS_Store
+.idea
+.env
+hw05/config.js
